@@ -1,0 +1,481 @@
+@font-face {
+    font-family: "text";
+    src: url('fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+    font-family: "nav";
+    src: url('fonts/RobotoMono-Bold.ttf');
+}
+
+@font-face {
+    font-family: "head";
+    src: url('fonts/PlaywriteFRModerne-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: "button";
+    src: url('fonts/BaskervvilleSC-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Roboto mono";
+    src: url('fonts/RobotoMono-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: "skill";
+    src: url('fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "signature";
+    src: url('fonts/PlaywriteHR-VariableFont_wght.ttf');
+}
+
+body{
+    background-color: rgb(230, 226, 226);
+    color: black;
+    padding-left: 4px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/***************/
+/* common css  */
+/***************/
+
+section {
+    min-height: calc(100vh - 35px);
+}
+
+section:first-of-type{
+    padding-top: 30px;
+}
+
+.hiden{
+    display: none;
+}
+.menu img{
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+
+/************/
+/* Nav css  */
+/************/
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    position: fixed;
+    height: 30px;
+    width: 100%;
+    background-color: inherit;
+}
+
+.menu-items{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding-right:10px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    font-family: "nav";
+    color: black;
+    background-color: antiquewhite;
+    margin: 8px;
+    padding: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 4px;
+}
+
+.menu-items a:hover{
+    background-color: rgb(230, 226, 226);
+    transition-duration: 500ms;
+}
+
+/**************/
+/* intro css  */
+/**************/
+
+#intro{
+ display: flex;
+}
+
+.name{
+    font-family: "Roboto mono";
+    margin-bottom: 4px;
+}
+
+.me{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-me-button a{
+    text-decoration: none;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'button';
+    font-size: medium;
+    color: black;
+}
+
+.cv-button{
+    margin-top: 20px;
+}
+
+.cv-button button{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'button';
+    font-size: medium;
+    color: black;
+    cursor: pointer;
+
+}
+
+.me .my-image{
+    mix-blend-mode: darken;
+}
+
+.me .socal-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.me .socal-media div img {
+    padding: 5px;
+}
+
+.me>div {
+    text-align: center;
+}
+
+.about-me{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-me h1{
+    padding-bottom: 4px;
+    font-family: 'head';
+}
+
+.about-me p{
+    font-family: "text";
+    padding-right: 20px;
+}
+
+@media (max-width:800px) {
+    .menu-items li{
+        margin-top: 8px;
+        margin-bottom: 4px;
+    }
+    #intro{
+        display: block;
+    }
+
+    .me{
+        width: 100%;
+    }
+    
+    .about-me{
+        width: 100%;
+        margin-top: 8px;
+    }
+}
+@media (max-width:1000px) {
+    .menu-items{
+        width: 20vh;
+        display: block;
+        margin-top: 150px;
+        text-align: center;
+        padding-left: 20px;
+        position: absolute;
+        display: none;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid;
+    }
+    .menu-items li{
+        background-color: rgb(54, 55, 53);
+        border-radius: 4px;
+    }
+    .menu-items a {
+        color: rgb(255, 255, 255);
+        background-color: rgb(54, 55, 53);
+        margin: 0px;
+        padding: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border-radius: 0px;
+        width: 20px;
+        
+    }
+    .menu-items a li:hover{
+        background-color: aliceblue;
+        color: black;
+    }
+    .hiden{
+        display: contents;
+
+    }
+}
+
+/*******************/
+/* skills */
+/******************/
+
+#Skills{
+    padding-top: 30px;
+    font-family: "skill";
+}
+#Skills .head{
+    text-align: center;
+    font-family: "head";
+}
+.skill-lavel{
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.flex{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+}
+.flex .skill-lavel{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.more-skills{
+    text-align: center;
+    display: flex;
+    gap: 10vw;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.dev-1 div{
+    padding-top: 3vh;
+}
+.dev-1 div img{
+    cursor: pointer;
+
+}
+.dev-2 div{
+    padding-top: 3vh;
+
+}
+.dev-2 div img{
+    cursor: pointer;
+}
+
+.skill-lavel .skill{
+    display: flex;
+    gap: 1vh;
+    align-items: center;
+    
+}
+.skill-lavel .skill .level{
+    height: 1vh;
+    width: 30vh;
+    border: 1px solid white;
+    border-radius: 1vh;
+    background-color: aliceblue;
+}
+
+.skill-lavel .skill .level .html{
+    height: 100%;
+    width: 80%;
+    background-color: green;
+    border-radius: 3px;
+}
+.skill-lavel .skill .level .css{
+    height: 100%;
+    width: 70%;
+    background-color: green;
+    border-radius: 3px;
+}
+.skill-lavel .skill .level .js{
+    height: 100%;
+    width: 80%;
+    background-color: green;
+    border-radius: 3px;
+}
+
+.responsiv{
+    display: flex;
+    /* background-color: red; */
+    height: 35vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+.responsiv>div{
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+@media (min-width:1000px) {
+    .more-skills{
+        flex-direction: column;
+        gap: 10vh;
+    }
+    .dev-1{
+        display: flex;
+        align-items: center;
+        gap: 20vh;
+    }
+    .dev-2{
+        display: flex;
+        align-items: center;
+        gap: 20vh;
+    }
+}
+@media (max-width:700px) {
+    .flex{
+        padding-top: 5vh;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .more-skills{
+        flex-direction: column;
+        gap: 2vh;
+
+    }
+    .dev-1{
+        display: flex;
+        align-items: center;
+        gap: 8vh;
+    }
+    .dev-2{
+        display: flex;
+        align-items: center;
+        gap: 8vh;
+        padding-bottom: 3vh;
+    }
+    
+}
+
+
+/****************/
+/* project */
+/***************/
+
+#project{
+    display: none
+}
+
+/****************/
+/* contact */
+/***************/
+#contact{
+    padding-top: 30px;
+}
+#contact .head{
+    font-family: "head";
+    text-align: center;
+}
+#contact .flex{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.contact-me{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contact-me div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 8px;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-form div{
+    padding-bottom: 10px;
+}
+
+.contact-form div input{
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: black;
+    color: azure;
+}
+
+.form-message textarea{
+    height: 100px;
+    width: 100%;
+}
+
+#submit{
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'button';
+    font-size: medium;
+    color: black;
+    cursor: pointer;
+}
+@media (max-width:850px) {
+    #contact .flex{
+        flex-direction: column;
+    }
+    .contact-me{
+        width: 100%;
+    }
+}
+
+footer{
+    background-color: whitesmoke;
+    height: 20vh;
+}
+footer h1{
+    font-family: "signature";
+    font-size: small;
+}
