@@ -208,20 +208,22 @@ section:first-of-type{
 }
 @media (max-width:1000px) {
     .menu-items{
-        width: 20vh;
         display: block;
         margin-top: 150px;
         text-align: center;
         padding-left: 20px;
         position: absolute;
-        display: none;
         border-radius: 10px;
         background-color: rgb(255, 255, 255);
         border: 2px solid;
+        visibility: hidden;
     }
     .menu-items li{
         background-color: rgb(54, 55, 53);
         border-radius: 4px;
+        margin: 10px 0px;
+        padding: 0px 10px;
+      
     }
     .menu-items a {
         color: rgb(255, 255, 255);
@@ -231,8 +233,8 @@ section:first-of-type{
         padding-top: 0px;
         padding-bottom: 0px;
         border-radius: 0px;
-        width: 20px;
-        
+       
+
     }
     .menu-items a li:hover{
         background-color: aliceblue;
@@ -240,7 +242,6 @@ section:first-of-type{
     }
     .hiden{
         display: contents;
-
     }
 }
 
