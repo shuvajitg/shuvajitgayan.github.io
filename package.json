@@ -2,6 +2,7 @@
   "name": "port-folio",
   "version": "1.0.0",
   "main": "script.js",
+  "type":"module",
   "scripts": {
     "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
